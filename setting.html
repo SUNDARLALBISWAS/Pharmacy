@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Settings</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bx-plus-medical'></i>
+      <span class="logo_name">PharmaMeds</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="admin.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="bill.html">
+            <i class='bx bx-receipt'></i>
+            <span class="links_name">Bill Generation</span>
+          </a>
+        </li>
+        <li>
+          <a href="med.html">
+            <i class='bx bxs-capsule'></i>
+            <span class="links_name">Search Medicine</span>
+          </a>
+        </li>
+        <li>
+          <a href="alert.html">
+            <i class='bx bx-bell'></i>
+            <span class="links_name">Alert</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="totalorder.html">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">Total order</span>
+          </a>
+        </li>
+        <li>
+          <a href="msg.html" >
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+        
+        <li>
+          <a href="setting.html" class="active">
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="login.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">SUNDAR LAL BISWAS</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+                <h2 class="h3 mb-4 page-title">Settings</h2>
+                <div class="my-4">
+                    <ul class="nav nav-tabs mb-4" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="false">Profile</a>
+                        </li>
+                    </ul>
+                    <form>
+                        <div class="row mt-5 align-items-center">
+                            <div class="col-md-3 text-center mb-5">
+                                <div class="avatar avatar-xl">
+                                    <img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="..." class="avatar-img rounded-circle" />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row align-items-center">
+                                    <div class="col-md-7">
+                                        <h4 class="mb-1">Abhinandan Sinha</h4>
+                                        <p class="small mb-3"><span class="badge badge-dark">Kolkata, India</span></p>
+                                    </div>
+                                </div>
+                                <div class="row mb-4">
+                                    <div class="col-md-7">
+                                        <p class="text-muted">
+                                           
+                                        </p>
+                                    </div>
+                                    <div class="col">
+                                        <p class="small mb-0 text-muted">PharmaMeds Ltd</p>
+                                        <p class="small mb-0 text-muted">P.O. Box 464, 5975 Eget Avenue</p>
+                                        <p class="small mb-0 text-muted">(537) 315-1481</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="firstname">Firstname</label>
+                                <input type="text" id="firstname" class="form-control" placeholder="Abhinandan" />
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lastname">Lastname</label>
+                                <input type="text" id="lastname" class="form-control" placeholder="Sinha" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="brown@asher.me" />
+                        </div>
+                        <div class="form-group">
+                            <label for="inputAddress5">Address</label>
+                            <input type="text" class="form-control" id="inputAddress5" placeholder="P.O. Box 464, 5975 Eget Avenue" />
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputCompany5">Company</label>
+                                <input type="text" class="form-control" id="inputCompany5" placeholder="Nec Urna Suscipit Ltd" />
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputState5">State</label>
+                                <select id="inputState5" class="form-control">
+                                    <option selected="">Choose...</option>
+                                    <option>West Bengal</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                                <label for="inputZip5">Zip</label>
+                                <input type="text" class="form-control" id="inputZip5" placeholder="98232" />
+                            </div>
+                        </div>
+                        <hr class="my-4" />
+                        <div class="row mb-4">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="inputPassword4">Old Password</label>
+                                    <input type="password" class="form-control" id="inputPassword5" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword5">New Password</label>
+                                    <input type="password" class="form-control" id="inputPassword5" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword6">Confirm Password</label>
+                                    <input type="password" class="form-control" id="inputPassword6" />
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="mb-2">Password requirements</p>
+                                <p class="small text-muted mb-2">To create a new password, you have to meet all of the following requirements:</p>
+                                <center><ul class="small text-muted pl-4 mb-0">
+                                    <ul>Minimum 8 character</ul>
+                                    <ul>At least one special character</ul>
+                                    <ul>At least one number</ul>
+                                    <ul>Can’t be the same as a previous password</ul>
+                                </ul>
+                            </center>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save Change</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+
+
+
+
+</body>
+</html>

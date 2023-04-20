@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style1.css" />
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>User Menu</title>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="pm-logo.png" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">PharmaMeds</span>
+            <span class="profession">Profile</span>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-filter-alt"></i>
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="dashboard.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrorder.html">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">Order</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usroffer.html">
+                <i class="bx bx-bell icon"></i>
+                <span class="text nav-text">Offers</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrprescription.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Prescription</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrwallet.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">Wallets</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrhelp.html">
+                <i class="bx bx-help-circle icon"></i>
+                <span class="text nav-text">Help?</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrrate.html">
+                <i class="bx bx-star icon"></i>
+                <span class="text nav-text">Rate us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="login.html">
+              <i class="bx bx-log-out icon"></i>
+
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Dashboard Sidebar</div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="md:h-80 flex flex-col sm:flex-row bg-gray-900 rounded-lg overflow-hidden"
+          >
+            <!-- content - start -->
+            <div class="w-full sm:w-1/2 lg:w-2/5 flex flex-col p-4 sm:p-8">
+              <h2
+                class="text-white text-xl md:text-2xl lg:text-4xl font-bold mb-4"
+              >
+                Winter Sale<br />Up to 70% off.
+              </h2>
+
+              <p class="max-w-md text-gray-400 mb-8">
+                Medicines with all health conditions
+              </p>
+
+              <div class="mt-auto">
+                <a
+                  href="#"
+                  class="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+                  >Save now</a
+                >
+              </div>
+            </div>
+            <!-- content - end -->
+
+            <!-- image - start -->
+            <div
+              class="w-full sm:w-1/2 lg:w-3/5 h-48 sm:h-auto order-first sm:order-none bg-gray-700"
+            >
+              <img
+                src="https://thumbs.dreamstime.com/b/winter-sale-message-young-woman-holding-shopping-bags-winter-sale-message-woman-holding-shopping-bags-130035051.jpg"
+                loading="lazy"
+                alt="Photo by Dom Hill"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <!-- image - end -->
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="md:h-80 flex flex-col sm:flex-row bg-gray-900 rounded-lg overflow-hidden"
+          >
+            <!-- content - start -->
+            <div class="w-full sm:w-1/2 lg:w-2/5 flex flex-col p-4 sm:p-8">
+              <h2
+                class="text-white text-xl md:text-2xl lg:text-4xl font-bold mb-4"
+              >
+                Up to 20% off.<br />On HDFC Card
+              </h2>
+
+              <p class="max-w-md text-gray-400 mb-8">
+                Use HDFC Card to avil this offer.
+              </p>
+
+              <div class="mt-auto">
+                <a
+                  href="#"
+                  class="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+                  >Save now</a
+                >
+              </div>
+            </div>
+            <!-- content - end -->
+
+            <!-- image - start -->
+            <div
+              class="w-full sm:w-1/2 lg:w-3/5 h-48 sm:h-auto order-first sm:order-none bg-gray-700"
+            >
+              <img
+                src="https://www.cardexpert.in/wp-content/uploads/2022/01/hdfc-spend-linked-offer-jan-2022.jpg"
+                loading="lazy"
+                alt="Photo by Dom Hill"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <!-- image - end -->
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="md:h-80 flex flex-col sm:flex-row bg-gray-900 rounded-lg overflow-hidden"
+          >
+            <!-- content - start -->
+            <div class="w-full sm:w-1/2 lg:w-2/5 flex flex-col p-4 sm:p-8">
+              <h2
+                class="text-white text-xl md:text-2xl lg:text-4xl font-bold mb-4"
+              >
+                Get 10% cashback<br />On Orders above 500
+              </h2>
+
+              <p class="max-w-md text-gray-400 mb-8">
+                Purchase more than 500 worth of medicines and get 10% cashback!!
+              </p>
+
+              <div class="mt-auto">
+                <a
+                  href="#"
+                  class="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+                  >Save now</a
+                >
+              </div>
+            </div>
+            <!-- content - end -->
+
+            <!-- image - start -->
+            <div
+              class="w-full sm:w-1/2 lg:w-3/5 h-48 sm:h-auto order-first sm:order-none bg-gray-700"
+            >
+              <img
+                src="https://images.unsplash.com/photo-1505846951821-e25bacf2eccd?auto=format&q=75&fit=crop&crop=top&w=1000&h=500"
+                loading="lazy"
+                alt="Photo by Dom Hill"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <!-- image - end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const body = document.querySelector("body"),
+        sidebar = body.querySelector("nav"),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+
+      searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+      });
+
+      modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+          modeText.innerText = "Light mode";
+        } else {
+          modeText.innerText = "Dark mode";
+        }
+      });
+    </script>
+  </body>
+</html>

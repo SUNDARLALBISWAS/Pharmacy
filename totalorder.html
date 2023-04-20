@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style2.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bx-plus-medical'></i>
+      <span class="logo_name">PharmaMeds</span>
+    </div>
+      <ul class="nav-links">
+        <li>
+          <a href="admin.html">
+            <i class='bx bx-grid-alt' ></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="bill.html">
+            <i class='bx bx-receipt'></i>
+            <span class="links_name">Bill Generation</span>
+          </a>
+        </li>
+        <li>
+          <a href="med.html">
+            <i class='bx bxs-capsule'></i>
+            <span class="links_name">Search Medicine</span>
+          </a>
+        </li>
+        <li>
+          <a href="alert.html">
+            <i class='bx bx-bell'></i>
+            <span class="links_name">Alert</span>
+          </a>
+        </li>
+       
+        <li>
+          <a href="totalorder.html" class="active">
+            <i class='bx bx-book-alt' ></i>
+            <span class="links_name">Total order</span>
+          </a>
+        </li>
+        <li>
+          <a href="msg.html" >
+            <i class='bx bx-message' ></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+       
+        <li>
+          <a href="setting.html" >
+            <i class='bx bx-cog' ></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="login.html">
+            <i class='bx bx-log-out'></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+  </div>
+  <section class="home-section">
+    <nav>
+      <div class="sidebar-button">
+        <i class='bx bx-menu sidebarBtn'></i>
+        <span class="dashboard">Dashboard</span>
+      </div>
+      <div class="search-box">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search' ></i>
+      </div>
+      <div class="profile-details">
+        <!--<img src="images/profile.jpg" alt="">-->
+        <span class="admin_name">Abhinandan Sinha</span>
+        <i class='bx bx-chevron-down' ></i>
+      </div>
+    </nav>
+
+    <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div class="flex justify-between items-end gap-4 mb-6">
+            
+      
+            <a href="#" class="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 border text-gray-500 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-4 md:px-8 py-2 md:py-3">Show more</a>
+          </div>
+      
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 md:gap-x-6 gap-y-8">
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="dettol.webp" loading="lazy" alt="Photo by Rachit Tank" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+      
+                <span class="bg-red-500 text-white text-sm tracking-wider uppercase rounded-br-lg absolute left-0 top-0 px-3 py-1.5">sale</span>
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Dettol</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$15.00</span>
+                  
+                  <span class="text-red-500 line-through mb-0.5">$30.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+      
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="milk.webp" loading="lazy" alt="Photo by Galina N" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Super Milk</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$50.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+      
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="throat.webp" loading="lazy" alt="Photo by eniko kis" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Throat calm</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$45.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+      
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSk0fjPCrXgziZ88jXrZLYWCH5KQUFvfO9Mds3OUiVYmjN8bzEdbPA-atbsFZ1rypNkfh0rEvf0_p5OdHPwmuzF2a6_qc7Esc0BGO_U6sTNmEyI5RgcFojdIQ&usqp=CAE" loading="lazy" alt="Photo by Irene Kredenets" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Strepsils</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$29.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+      
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqgNkbmd9xsnsH740hIfH1ydviuCvdLCuO7bnAtL-wfC8c3c-RxKy6wMKYi2n86B1GJ2Yij_IQwCyZ2b2HwhaOWDbHs2VobkZmUXsnrRocer8leF0rixin0JA&usqp=CAE" loading="lazy" alt="Photo by Charles Deluvio" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Boric Acid</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$4.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+      
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTPfHhQBAGu6zYqcMSV1sgkcQm7f0_jryZO5Gm9yRygIi8pMwUSgQC4FD67NKNPkwd-7R-8p4HwkrzSNDlPIZP_rtuNkGxs_0K_04xDIhbtGCN52Gpm8YG0mA&usqp=CAE" loading="lazy" alt="Photo by Fernando Lavin" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Lacrimos Gel</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$19.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+      
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcR9xmt4zuY6KxKpD8Y9gL7mZxqrTZKp5dWLT_EUA4moYJ5QBI5RlIjXXXyOKmLzM2S_0YnKqXeLqCgcWVi4VXVyIaNEBZtypV2PNaQCSW59kB93Xlfl2jEuiA&usqp=CAE" loading="lazy" alt="Photo by Kiran CK" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+                <span class="bg-red-500 text-white text-sm tracking-wider uppercase rounded-br-lg absolute left-0 top-0 px-3 py-1.5">sale</span>
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Hyane Eye drops</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$12.00</span>
+                  <span class="text-red-500 line-through mb-0.5">$24.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+      
+            <!-- product - start -->
+            <div>
+              <a href="#" class="group h-80 block bg-gray-100 rounded-lg overflow-hidden relative mb-2 lg:mb-3">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQE9fhBPKbPS_hdsixRVAjI3hlXjvprzSLZ78a4m9kH3OtZ9Dqwks_FLsc-O-9B3TLAgpWWNcyb_FYzAKh5F_FFTpTEiJtbS81XRka7MdsrogWqjR5PR3gqHw&usqp=CAE" loading="lazy" alt="Photo by Fakurian Design" class="w-full h-full object-cover object-center group-hover:scale-110 transition duration-200" />
+              </a>
+      
+              <div>
+                <a href="#" class="text-gray-500 hover:gray-800 lg:text-lg transition duration-100 mb-1">Antoxipan-DS</a>
+      
+                <div class="flex items-end gap-2">
+                  <span class="text-gray-800 lg:text-lg font-bold">$9.00</span>
+                  <a href><i class='bx bx-plus' ></i></a>
+                  <a href><i class='bx bx-minus' ></i></a>
+                </div>
+              </div>
+            </div>
+            <!-- product - end -->
+          </div>
+        </div>
+      </div>
+
+
+
+</body>
+</html>

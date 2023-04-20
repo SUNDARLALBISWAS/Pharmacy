@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<!-- Coding by CodingLab | www.codinglabweb.com -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style1.css" />
+
+    <!----===== Boxicons CSS ===== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>User Menu</title>
+  </head>
+  <body>
+    <nav class="sidebar close">
+      <header>
+        <div class="image-text">
+          <span class="image">
+            <img src="pm-logo.png" />
+          </span>
+
+          <div class="text logo-text">
+            <span class="name">PharmaMeds</span>
+            <a href="editacc.html"><span class="profession">Profile</span></a>
+          </div>
+        </div>
+
+        <i class="bx bx-chevron-right toggle"></i>
+      </header>
+
+      <div class="menu-bar">
+        <div class="menu">
+          <li class="search-box">
+            <i class="bx bx-search icon"></i>
+            <input type="text" placeholder="Search..." />
+            <i class="bx bx-filter-alt"></i>
+          </li>
+          <li>
+            <label for="inputState5">Filter</label>
+            <select id="inputState5" class="form-control">
+              <option selected="">...</option>
+              <option>By Shop</option>
+              <option>By Composition</option>
+              <option>By Illness</option>
+              <option>By name</option>
+            </select>
+          </li>
+
+          <ul class="menu-links">
+            <li class="nav-link">
+              <a href="dashboard.html">
+                <i class="bx bx-home-alt icon"></i>
+                <span class="text nav-text">Dashboard</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrorder.html">
+                <i class="bx bx-bar-chart-alt-2 icon"></i>
+                <span class="text nav-text">Order</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usroffer.html">
+                <i class="bx bx-bell icon"></i>
+                <span class="text nav-text">Offers</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrprescription.html">
+                <i class="bx bx-pie-chart-alt icon"></i>
+                <span class="text nav-text">My Prescription</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrwallet.html">
+                <i class="bx bx-wallet icon"></i>
+                <span class="text nav-text">Wallets</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrhelp.html">
+                <i class="bx bx-help-circle icon"></i>
+                <span class="text nav-text">Help?</span>
+              </a>
+            </li>
+
+            <li class="nav-link">
+              <a href="usrrate.html">
+                <i class="bx bx-star icon"></i>
+                <span class="text nav-text">Rate us</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="bottom-content">
+          <li class="">
+            <a href="login.html">
+              <i class="bx bx-log-out icon"></i>
+
+              <span class="text nav-text">Logout</span>
+            </a>
+          </li>
+
+          <li class="mode">
+            <div class="sun-moon">
+              <i class="bx bx-moon icon moon"></i>
+              <i class="bx bx-sun icon sun"></i>
+            </div>
+            <span class="mode-text text">Dark mode</span>
+
+            <div class="toggle-switch">
+              <span class="switch"></span>
+            </div>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+    <section class="home">
+      <div class="text">Dashboard Sidebar</div>
+      <div class="bg-gray-200 py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-2xl px-4 md:px-8 mx-auto">
+          <div
+            class="md:h-80 flex flex-col sm:flex-row bg-gray-900 rounded-lg overflow-hidden"
+          >
+            <!-- content - start -->
+            <div class="w-full sm:w-1/2 lg:w-2/5 flex flex-col p-4 sm:p-8">
+              <h2
+                class="text-white text-xl md:text-2xl lg:text-4xl font-bold mb-4"
+              >
+                Winter Sale<br />Up to 40% off.
+              </h2>
+
+              <p class="max-w-md text-gray-400 mb-8">
+                Medicines with all health conditions
+              </p>
+
+              <div class="mt-auto">
+                <a
+                  href="#"
+                  class="inline-block bg-white hover:bg-gray-100 active:bg-gray-200 focus-visible:ring ring-indigo-300 text-gray-800 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+                  >Save now</a
+                >
+              </div>
+            </div>
+            <!-- content - end -->
+
+            <!-- image - start -->
+            <div
+              class="w-full sm:w-1/2 lg:w-3/5 h-48 sm:h-auto order-first sm:order-none bg-gray-700"
+            >
+              <img
+                src="data:image/jpeg;base64,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"
+                loading="lazy"
+                alt="Photo by Dom Hill"
+                class="w-full h-full object-cover object-center"
+              />
+            </div>
+            <!-- image - end -->
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white py-6 sm:py-8 lg:py-12">
+        <div class="max-w-screen-xl px-4 md:px-8 mx-auto">
+          <h2
+            class="text-gray-800 text-2xl lg:text-3xl font-bold text-center mb-4 md:mb-8 xl:mb-12"
+          >
+            Pick your plan
+          </h2>
+
+          <div
+            class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-6 lg:gap-x-8 gap-y-12 mb-6 md:mb-8"
+          >
+            <!-- plan - start -->
+            <div class="flex flex-col space-y-4">
+              <div class="flex flex-col border rounded-lg gap-4 p-4 pt-6">
+                <h3 class="text-gray-800 text-2xl font-semibold text-center">
+                  Free
+                </h3>
+
+                <div class="flex justify-center items-end gap-1">
+                  <span class="text-4xl text-gray-800 font-bold">$0</span>
+                  <span class="text-gray-500">/ month</span>
+                </div>
+
+                <div
+                  class="flex justify-center items-center text-gray-500 text-sm gap-1 mb-4"
+                >
+                  14-day money backguarantee
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+
+                <a
+                  href="#"
+                  class="block bg-gray-200 hover:bg-gray-300 focus-visible:ring ring-indigo-300 text-gray-500 active:text-gray-700 text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+                  >Select Free</a
+                >
+              </div>
+
+              <div class="flex-1 bg-gray-100 rounded-lg space-y-3 px-4 py-6">
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600">Limited Offers</span>
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600"
+                    >2% cashback on Diagnostic orders</span
+                  >
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600">Comunity support</span>
+                </div>
+                <!-- check - end -->
+              </div>
+            </div>
+            <!-- plan - end -->
+
+            <!-- plan - start -->
+            <div class="flex flex-col space-y-4">
+              <div
+                class="flex flex-col border border-indigo-500 rounded-lg relative gap-4 p-4 pt-6"
+              >
+                <div class="flex justify-center absolute -top-3 inset-x-0">
+                  <span
+                    class="h-6 flex justify-center items-center bg-indigo-500 text-white text-xs font-semibold tracking-widest uppercase rounded-full px-3 py-1"
+                    >most popular</span
+                  >
+                </div>
+
+                <h3 class="text-gray-800 text-2xl font-semibold text-center">
+                  Basic
+                </h3>
+
+                <div class="flex justify-center items-end gap-1">
+                  <span class="text-4xl text-gray-800 font-bold">$100</span>
+                  <span class="text-gray-500">/ month</span>
+                </div>
+
+                <div
+                  class="flex justify-center items-center text-gray-500 text-sm gap-1 mb-4"
+                >
+                  14-day money backguarantee
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+
+                <a
+                  href="#"
+                  class="block bg-indigo-500 hover:bg-indigo-600 active:bg-indigo-700 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+                  >Select Team</a
+                >
+              </div>
+
+              <div class="flex-1 bg-gray-100 rounded-lg space-y-3 px-4 py-6">
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600"
+                    >5% cashback on Medicine orders</span
+                  >
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600"
+                    >10% cashback on Diagnostic orders</span
+                  >
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600">Early access to sales</span>
+                </div>
+                <!-- check - end -->
+              </div>
+            </div>
+            <!-- plan - end -->
+
+            <!-- plan - start -->
+            <div class="flex flex-col space-y-4">
+              <div class="flex flex-col border rounded-lg gap-4 p-4 pt-6">
+                <h3 class="text-gray-800 text-2xl font-semibold text-center">
+                  Pro
+                </h3>
+
+                <div class="flex justify-center items-end gap-1">
+                  <span class="text-4xl text-gray-800 font-bold">$200</span>
+                  <span class="text-gray-500">/ month</span>
+                </div>
+
+                <div
+                  class="flex justify-center items-center text-gray-500 text-sm gap-1 mb-4"
+                >
+                  14-day money backguarantee
+
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-4 h-4"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </div>
+
+                <a
+                  href="#"
+                  class="block bg-gray-800 hover:bg-gray-700 active:bg-gray-600 focus-visible:ring ring-indigo-300 text-white text-sm md:text-base font-semibold text-center rounded-lg outline-none transition duration-100 px-8 py-3"
+                  >Select Enterprise</a
+                >
+              </div>
+
+              <div class="flex-1 bg-gray-100 rounded-lg space-y-3 px-4 py-6">
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600"
+                    >5% cashback on Medicine orders</span
+                  >
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600"
+                    >10% cashback on Diagnostic orders</span
+                  >
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600">Free Delivery</span>
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600">Early access to sales</span>
+                </div>
+                <!-- check - end -->
+
+                <!-- check - start -->
+                <div class="flex gap-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="w-6 h-6 shrink-0 text-indigo-500"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 13l4 4L19 7"
+                    />
+                  </svg>
+
+                  <span class="text-gray-600">Free doctor consultation</span>
+                </div>
+                <!-- check - end -->
+              </div>
+            </div>
+            <!-- plan - end -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      const body = document.querySelector("body"),
+        sidebar = body.querySelector("nav"),
+        toggle = body.querySelector(".toggle"),
+        searchBtn = body.querySelector(".search-box"),
+        modeSwitch = body.querySelector(".toggle-switch"),
+        modeText = body.querySelector(".mode-text");
+
+      toggle.addEventListener("click", () => {
+        sidebar.classList.toggle("close");
+      });
+
+      searchBtn.addEventListener("click", () => {
+        sidebar.classList.remove("close");
+      });
+
+      modeSwitch.addEventListener("click", () => {
+        body.classList.toggle("dark");
+
+        if (body.classList.contains("dark")) {
+          modeText.innerText = "Light mode";
+        } else {
+          modeText.innerText = "Dark mode";
+        }
+      });
+    </script>
+  </body>
+</html>

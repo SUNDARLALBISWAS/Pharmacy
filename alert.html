@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<!-- Designined by CodingLab | www.youtube.com/codinglabyt -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="style2.css" />
+    <!-- Boxicons CDN Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="logo-details">
+        <i class="bx bx-plus-medical"></i>
+        <span class="logo_name">PharmaMeds</span>
+      </div>
+      <ul class="nav-links">
+        <li>
+          <a href="admin.html">
+            <i class="bx bx-grid-alt"></i>
+            <span class="links_name">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="bill.html">
+            <i class="bx bx-receipt"></i>
+            <span class="links_name">Bill Generation</span>
+          </a>
+        </li>
+        <li>
+          <a href="med.html">
+            <i class="bx bxs-capsule"></i>
+            <span class="links_name">Search Medicine</span>
+          </a>
+        </li>
+        <li>
+          <a href="alert.html" class="active">
+            <i class="bx bx-bell"></i>
+            <span class="links_name">Alert</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="totalorder.html">
+            <i class="bx bx-book-alt"></i>
+            <span class="links_name">Total order</span>
+          </a>
+        </li>
+        <li>
+          <a href="msg.html">
+            <i class="bx bx-message"></i>
+            <span class="links_name">Messages</span>
+          </a>
+        </li>
+
+        <li>
+          <a href="setting.html">
+            <i class="bx bx-cog"></i>
+            <span class="links_name">Setting</span>
+          </a>
+        </li>
+        <li class="log_out">
+          <a href="login.html">
+            <i class="bx bx-log-out"></i>
+            <span class="links_name">Log out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <section class="home-section">
+      <nav>
+        <div class="sidebar-button">
+          <i class="bx bx-menu sidebarBtn"></i>
+          <span class="dashboard">Dashboard</span>
+        </div>
+        <div class="search-box">
+          <input type="text" placeholder="Search..." />
+          <i class="bx bx-search"></i>
+        </div>
+        <div class="profile-details">
+          <!--<img src="images/profile.jpg" alt="">-->
+          <span class="admin_name">SUNDAR LAL BISWAS</span>
+          <i class="bx bx-chevron-down"></i>
+        </div>
+      </nav>
+
+      <div class="home-content">
+        <div class="overview-boxes">
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total Order</div>
+              <div class="number">40,876</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Up from yesterday</span>
+              </div>
+            </div>
+            <i class="bx bx-cart-alt cart"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total Sales</div>
+              <div class="number">38,876</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Up from yesterday</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-add cart two"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total Profit</div>
+              <div class="number">$12,876</div>
+              <div class="indicator">
+                <i class="bx bx-up-arrow-alt"></i>
+                <span class="text">Up from yesterday</span>
+              </div>
+            </div>
+            <i class="bx bx-cart cart three"></i>
+          </div>
+          <div class="box">
+            <div class="right-side">
+              <div class="box-topic">Total Return</div>
+              <div class="number">11,086</div>
+              <div class="indicator">
+                <i class="bx bx-down-arrow-alt down"></i>
+                <span class="text">Down From Today</span>
+              </div>
+            </div>
+            <i class="bx bxs-cart-download cart four"></i>
+          </div>
+        </div>
+
+        <div class="sales-boxes">
+          <div class="recent-sales box">
+            <div class="title">Medicines in Stock</div>
+            <div class="sales-details">
+              <ul class="details">
+                <li class="topic">Name</li>
+                <li><a href="#">Hydrocodone</a></li>
+                <li><a href="#">Metformin</a></li>
+                <li><a href="#">Losartan</a></li>
+                <li><a href="#">Antibiotics</a></li>
+                <li><a href="#">Albuterol</a></li>
+                <li><a href="#">Antihistamines</a></li>
+                <li><a href="#">Gabapentin</a></li>
+              </ul>
+
+              <ul class="details">
+                <li class="topic">Total</li>
+                <li><a href="#">$204.98</a></li>
+                <li><a href="#">$24.55</a></li>
+                <li><a href="#">$25.88</a></li>
+                <li><a href="#">$170.66</a></li>
+                <li><a href="#">$56.56</a></li>
+                <li><a href="#">$44.95</a></li>
+                <li><a href="#">$67.33</a></li>
+              </ul>
+            </div>
+            <div class="button">
+              <a href="#">See All</a>
+            </div>
+          </div>
+          <div class="top-sales box">
+            <div class="title">ALERT!!(Medicines Low in Stock)</div>
+            <ul class="top-sales-details">
+              <li>
+                <a href="#">
+                  <!--<img src="images/sunglasses.jpg" alt="">-->
+                  <span class="product">Omeprazole</span>
+                </a>
+                <span class="price">$1107</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/jeans.jpg" alt="">-->
+                  <span class="product">Levothyroxine </span>
+                </a>
+                <span class="price">$1567</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!-- <img src="images/nike.jpg" alt="">-->
+                  <span class="product">Atorvastatin</span>
+                </a>
+                <span class="price">$1234</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/scarves.jpg" alt="">-->
+                  <span class="product">Nexium</span>
+                </a>
+                <span class="price">$2312</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/blueBag.jpg" alt="">-->
+                  <span class="product">rosuvastatin</span>
+                </a>
+                <span class="price">$1456</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/bag.jpg" alt="">-->
+                  <span class="product">Advair Diskus</span>
+                </a>
+                <span class="price">$2345</span>
+              </li>
+
+              <li>
+                <a href="#">
+                  <!--<img src="images/addidas.jpg" alt="">-->
+                  <span class="product">Humira</span>
+                </a>
+                <span class="price">$2345</span>
+              </li>
+              <li>
+                <a href="#">
+                  <!--<img src="images/shirt.jpg" alt="">-->
+                  <span class="product">tiotropium</span>
+                </a>
+                <span class="price">$1245</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      let sidebar = document.querySelector(".sidebar");
+      let sidebarBtn = document.querySelector(".sidebarBtn");
+      sidebarBtn.onclick = function () {
+        sidebar.classList.toggle("active");
+        if (sidebar.classList.contains("active")) {
+          sidebarBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+        } else sidebarBtn.classList.replace("bx-menu-alt-right", "bx-menu");
+      };
+    </script>
+  </body>
+</html>
